@@ -14,7 +14,7 @@ export default class Card {
         <div class="os-price">
             <div class="os-price-star">
                 <p class="size">${this.state.rating}</p>
-            <img src="../01-css-task/images/Star.png" alt="icon">
+            <img src="./images/Star.png" alt="icon">
         </div>
         <p class="os-price-price size">
             ${this.state.price}
