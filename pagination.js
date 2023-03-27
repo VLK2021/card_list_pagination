@@ -31,6 +31,7 @@ export default class Pagination {
     getPageTemplate(pageIndex = 0) {
         const isActive = pageIndex === this.activePageIndex ? 'active' : '';
 
+
         return `<li
                 data-element="page-link"
                 class="siz page-link ${isActive}"
@@ -60,6 +61,7 @@ export default class Pagination {
         this.activePageIndex = pageIndex;
     }
 
+
     nextPage() {
         const nextPageIndex = this.activePageIndex + 1;
         this.setPage(nextPageIndex);
@@ -85,6 +87,7 @@ export default class Pagination {
             this.prevPage();
         });
 
+        
         nextPageBtn.addEventListener('click', () => {
             this.nextPage();
         });
